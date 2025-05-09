@@ -2,14 +2,13 @@
 <html lang="fr">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-30KJVVK5WR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-30KJVVK5WR');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-30KJVVK5WR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-30KJVVK5WR');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - SolaLuna</title>
@@ -30,10 +29,12 @@
     <h1>Contactez-nous</h1>
     <p>Une question, une réservation ? Écrivez-nous ou venez nous rendre visite !</p>
 
-    <form>
-      <input type="text" name="nom" placeholder="Votre nom" required>
-      <input type="email" name="email" placeholder="Votre email" required>
-      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+    <form action="https://formsubmit.co/leseigneurpaul@yahoo.com" method="POST">
+      <input type="text" name="Nom" placeholder="Votre nom" required>
+      <input type="email" name="Email" placeholder="Votre email" required>
+      <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
+      <!-- Redirection après envoi (optionnelle) -->
+      <input type="hidden" name="_next" value="https://solaluna.github.io/merci.html">
       <button type="submit">Envoyer</button>
     </form>
   </section>
